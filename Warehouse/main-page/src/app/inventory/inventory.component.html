@@ -79,50 +79,32 @@
           <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary" *ngFor="let item of itemList">
                 <div class="card-header py-3 text-bg-primary border-primary">
-                  <h4 class="my-0 fw-normal">Candy Name</h4>
+                  <h4 class="my-0 fw-normal">{{item.item_name}}</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">Number<small class="text-body-secondary fw-light">/case</small></h1>
+                  <h1 class="card-title pricing-card-title">{{item.quantity}}<small class="text-body-secondary fw-light">on hand</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li>Currently in stock</li>
-                    <li>Type</li>
-                    <li>YAda</li>
+                    <li>{{item.type_id}}</li>
+                    <li>{{item.popularity}}</li>
                     <li>Help center access</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary">Add to cart</button>
+                  <div>
+                  <button type="button" class="w-50 btn btn-md btn-primary border-dark">Update Item</button>
+                  <button type="button" class="w-50 btn btn-md btn-primary border-dark">Delete Item</button>
+                </div>
                 </div>
               </div>
             </div>
 
-
-
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                  <div class="card-header py-3 text-bg-secondary border-primary">
-                    <h4 class="my-0 fw-normal">Candy Name</h4>
-                  </div>
-                  <div class="card-body">
-                    <h1 class="card-title pricing-card-title">Number<small class="text-body-secondary fw-light">/case</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <li>Currently in stock</li>
-                      <li>Type</li>
-                      <li>YAda</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-secondary">Add to cart</button>
-                  </div>
-                </div>
-              </div>
-
-          
-
+            
           </div>
         </div>
         </main>
       </div>
-      <router-outlet></router-outlet>
+      <!-- <router-outlet></router-outlet> -->
     </div>
 
     <footer class="text-center">

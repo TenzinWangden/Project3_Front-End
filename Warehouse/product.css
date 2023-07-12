@@ -1,4 +1,4 @@
-.text-center{
+/* .text-center{
     width: 100%;
     text-align: center;
 }
@@ -38,13 +38,13 @@
     background-color: bisque;
     /*display: flex;
     justify-content
-    */
+    
 }
-/*
+
 .container{
 
 }
-*/
+
 
 .pagination {
     display: inline-block;
@@ -62,4 +62,4 @@
   }
   .pagination a.active {
     border-radius: 5px;
-  } 
+  }  */

@@ -5,7 +5,7 @@ import { Warehouse1Component } from './warehouse1/warehouse1.component';
 import { Warehouse2Component } from './warehouse2/warehouse2.component';
 import { Warehouse3Component } from './warehouse3/warehouse3.component';
 import { AboutComponent } from './about/about.component';
-import { InventoryComponent } from './inventory/inventory.component';
+import {InventoryComponent}from './inventory/inventory.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [{path: "home", component: MainPageComponent, title: "Camo Confections"},

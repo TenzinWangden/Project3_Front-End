@@ -6,10 +6,10 @@ import { Warehouse } from '../about/warehouse';
   providedIn: 'root'
 })
 export class WarehouseService {
-  warehouses=[new Warehouse(123, "A", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
-  new Warehouse(123, "Abds", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
-  new Warehouse(123, "Asfldkjfs", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
-  new Warehouse(123, "Adfjmdsajfpeoj", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000")]
+  warehouses=[new Warehouse(123, "Indianapolis", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
+  new Warehouse(123, "Nashville", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
+  new Warehouse(123, "OKC", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
+  new Warehouse(123, "Virginia", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000")]
   constructor() { }
 
   getWarehouses(){
