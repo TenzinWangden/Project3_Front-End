@@ -4,55 +4,16 @@
   <div class="container-fluid">
     <div class="row flew-xl-nowrap">
       <aside class="col-12 col-md-3 col-xl-2 bd-sidebar bg-secondary">
+        <a routerLink="/additem" class="btn btn-warning btn-lg d-grid gap-2 mt-3 mb-3 border-dark"> Add Inventory</a>
           <form>
-              <h2>Candies</h2>
+              <h2 style="font-weight: bold;">Candies</h2>
 
               <div *ngFor="let type of typeList">
                 <input type="checkbox" name="type.description" id="type.description" value="type.type_id" (change)="filter(type)">
                 <label for="type.description">{{type.description}}</label>
               </div>
 
-              <!-- <div>
-              <input type="checkbox" name="gummies" id="gummies" value="gummies">
-              <label for="gummies">Gummies</label>
-              </div>
-          <div> -->
-              <!-- <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
-              <label for="chocolate">Chocolate</label>
-          </div>
-          <div>
-              <input type="checkbox" name="hardcandy" id="hardcandy" value="hardcandy">
-              <label for="hardcandy">Hard Candy</label>
-          </div>
-          <div>
-              <input type="checkbox" name="gum" id="gum" value="gum">
-              <label for="gum">Gum</label>
-          </div>
-          <div>
-              <input type="checkbox" name="taffy" id="taffy" value="taffy">
-              <label for="taffy">Taffy</label>
-          </div>
-          <div>
-              <input type="checkbox" name="licorice" id="licorice" value="licorice">
-              <label for="licorice">Licorice</label>
-          </div>
-          <div>
-              <input type="checkbox" name="drinks" id="drinks" value="drinks">
-              <label for="drinks">Drinks</label>
-          </div>
-          <div>
-              <input type="checkbox" name="sours" id="sours" value="sours">
-              <label for="sours">Sours</label>
-          </div>
-          <div>
-              <input type="checkbox" name="cakes" id="cakes" value="cakes">
-              <label for="cakes">Cakes</label>
-          </div>
-          <div>
-              <input type="checkbox" name="muffins" id="muffins" value="muffins">
-              <label for="muffins">Muffins</label>
-          </div> -->
-          <h2>Warehouse Location</h2>
+          <h2 style="font-weight: bold;">Warehouse Location</h2>
           <div>
               <input id="warehouse1" name="location" type="radio" value="warehouse1" />
               <label for="warehouse1">Indianapolis</label>
@@ -66,10 +27,10 @@
               <label for="warehouse3">Oklahoma City</label>
           </div>
 
-              <button class="btn btn-primary btn-outline-dark " type="reset">RESET</button>
-              <button class="btn btn-primary btn-outline-dark " type="submit">SUBMIT</button>
+              <button class="btn btn-primary btn-outline-dark me-1 mt-2" type="reset">RESET</button>
+              <button class="btn btn-primary btn-outline-dark mt-2" type="submit">SUBMIT</button>
           </form>
-          <a routerLink="/additem" class="btn btn-warning btn-lg mt-3"> Add Inventory</a>
+          <!-- <a routerLink="/additem" class="btn btn-warning btn-lg mt-3"> Add Inventory</a> -->
       </aside>
       <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content bg-dark">
 
@@ -81,8 +42,8 @@
  
 
       <div class="text-center">
-        <input class="w-50 mb-3" type="search">
-        <button class="btn btn-primary" type="submit">Search</button>
+        <input class="w-50 pb-1 mb-3" type="search" style="height: 37px">
+        <button class="btn btn-primary ms-2" type="submit">Search</button>
       </div>
 
       <div>
@@ -97,19 +58,20 @@
                     <h4 class="my-0 fw-normal">{{item.item_name}}</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">{{item.quantity}}<small class="text-body-secondary fw-light">on hand</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
+                    <h1 class="card-title pricing-card-title align-text-top">{{item.quantity}}<small class="text-body-secondary fw-light fs-5 badge badge-primary text-wrap align-text-top" style="width: 7rem;"> Pc(s) Available</small></h1>
+                    <ul class="list-unstyled mb-2">
                       <li>Currently in stock</li>
-                      <li>{{item.type_id}}</li>
-                      <li>{{item.popularity}}</li>
-                      <li>Help center access</li>
+                      <li>Type: {{item.type_id}}</li>
+                      <li>Popularity: {{item.popularity}}</li>
+                      <li>Warehouse Location: {{item.warehouse_id}}</li>
+                      <li>Item ID: {{item.item_id}}</li>
                     </ul>
                     <div>
                     <!-- <button type="button" class="w-50 btn btn-md btn-primary border-dark">Update Item -->
-                      <a routerLink="/update" class="w-50 btn btn-md btn-primary border-dark"> Update</a>
+                      <a routerLink="/update" class=" btn btn-md btn-primary border-dark" style="width: 8em; margin-right:2px;"> Update</a>
                     <!-- </button> -->
 
-                    <button type="button" class="w-50 btn btn-md btn-primary border-dark">Delete Item</button>
+                    <button type="button" class=" btn btn-md btn-primary border-dark" style="width: 8em;">Delete Item</button>
                   </div>
               </div>
             </div>
