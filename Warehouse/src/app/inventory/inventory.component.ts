@@ -21,6 +21,12 @@ export class InventoryComponent implements OnInit {
       this.allItems = data.body;
       this.itemList= this.allItems;
     }
+    // ngOnInit(): void {
+    //   this.itemService.add().subscribe((data) => {
+    //    if(data.body != null){
+    //      this.allItems = data.body;
+    //      this.itemList= this.allItems;
+    //    }
 
    });
     this.typeList.push(new Typecheck(1, "gummies", false));

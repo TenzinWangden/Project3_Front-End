@@ -10,6 +10,8 @@ import { Warehouse3Component } from './warehouse3/warehouse3.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddItemComponent } from './add-item/add-item.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     Warehouse2Component,
     Warehouse3Component,
     InventoryComponent,
-    AboutComponent
+    AboutComponent,
+    AddItemComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

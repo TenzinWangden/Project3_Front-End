@@ -66,15 +66,19 @@
               <label for="warehouse3">Oklahoma City</label>
           </div>
 
-              <button class="btn btn-primary" type="reset">RESET</button>
-              <button class="btn btn-primary" type="submit">SUBMIT</button>
+              <button class="btn btn-primary btn-outline-dark " type="reset">RESET</button>
+              <button class="btn btn-primary btn-outline-dark " type="submit">SUBMIT</button>
           </form>
+          <a routerLink="/additem" class="btn btn-warning btn-lg mt-3"> Add Inventory</a>
       </aside>
       <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content bg-dark">
 
        
 
       <h1 class="text-center text-primary">Available Inventory</h1>
+     <!-- <a routerLink="/additem" class="btn btn-warning btn-lg btn-block"> Add Inventory</a> -->
+     
+ 
 
       <div class="text-center">
         <input class="w-50 mb-3" type="search">
@@ -101,7 +105,10 @@
                       <li>Help center access</li>
                     </ul>
                     <div>
-                    <button type="button" class="w-50 btn btn-md btn-primary border-dark">Update Item</button>
+                    <!-- <button type="button" class="w-50 btn btn-md btn-primary border-dark">Update Item -->
+                      <a routerLink="/update" class="w-50 btn btn-md btn-primary border-dark"> Update</a>
+                    <!-- </button> -->
+
                     <button type="button" class="w-50 btn btn-md btn-primary border-dark">Delete Item</button>
                   </div>
               </div>
