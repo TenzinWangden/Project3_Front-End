@@ -1,11 +1,11 @@
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f1aedac1;
-    color: #49143f;
-    padding: 1em;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  #333;
+  color: white;
+  padding: 1em;
+}
   
   .logo {
     display: flex;
@@ -27,3 +27,4 @@ nav {
     align-items: center;
   }
   
+ 

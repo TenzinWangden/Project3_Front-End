@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main-page.component.css">
-  <title>Warehouse</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+
+
+<link rel="stylesheet" href="main-page.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -21,10 +15,13 @@
                   <span class="icon-bar"></span>                        
                 </button>
          
-          
+                <header>
         <div class="logo">
           <img src="https://raw.githubusercontent.com/TenzinWangden/Project3_Front-End/daun/IMG_5914.jpeg" alt="Warehouse Logo">
         </div>
+       
+           
+          </header>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
         <a routerLink="/home" >Home</a> |
@@ -45,13 +42,13 @@
       </nav>
       
       <br>
-      <div class="search">
-        <input type="text" name="search" placeholder="Search">
-        <button class="btn btn-primary">Search</button>
-        
-      </div>
+   
       <div class="container">
-        
+        <div class="search">
+            <input type="text" name="search" placeholder="Search">
+            <button class="btn btn-primary">Search</button>
+            
+          </div>
         <h1>Welcome to The Candy Warehouse</h1>
         <p>Discover a world of delightful candies!</p>
         <a href="#" class="btn">Shop Now</a>
@@ -93,7 +90,39 @@
           <button class="btn btn-primary">Add to Cart</button>
         </div>
         
-        <form class="form-inline">
+    
+
+          <div class="section">
+            <a routerLink="/inventory/warehouse1">Warehouse 1</a> 
+      
+            <div class="section-content">
+              <img src="https://www.fueloyal.com/wp-content/uploads/2017/03/Discover-50-Best-Warehouse-Companies-in-Central-United-States-3.jpg" alt="Warehouse A" class="warehouse-image">
+              <p>Location: 123 Main Street, City</p>
+              <p>Capacity: 1000 sq. ft.</p>
+              <p>Number of Employees: 15</p>
+            </div>
+          </div>
+          
+          <div class="section">
+            <a routerLink="/inventory/warehouse2">Warehouse 2</a>
+            <div class="section-content">
+              <img src="https://www.fueloyal.com/wp-content/uploads/2017/03/Discover-50-Best-Warehouse-Companies-in-Central-United-States-1.jpg" alt="Warehouse B" class="warehouse-image">
+              <p>Location: 456 Elm Avenue, Town</p>
+              <p>Capacity: 1500 sq. ft.</p>
+              <p>Number of Employees: 10</p>
+            </div>
+          </div>
+          
+          <div class="section">
+            <a routerLink="/inventory/warehouse3">Warehouse 3</a>
+            <div class="section-content">
+              <img src="https://www.fueloyal.com/wp-content/uploads/2017/03/Discover-50-Best-Warehouse-Companies-in-Central-United-States-2.jpg" alt="Warehouse C" class="warehouse-image">
+              <p>Location: 789 Oak Road, Village</p>
+              <p>Capacity: 2000 sq. ft.</p>
+              <p>Number of Employees: 20</p>
+            </div>
+          </div>
+          <form class="form-inline">
             <div class="input-group">
               <input type="email" class="form-control" size="50" placeholder="Email Address" required>
               <div class="input-group-btn">
@@ -104,9 +133,7 @@
        
           
           <br>
-
-
-  <footer>
+          <footer>
     <div class="lists">
         <ul>
             <li><h2>Company</h2></li>
@@ -134,5 +161,4 @@
     <p>&copy; 2023 The Candy Warehouse. All rights reserved.</p>
   </footer>
 
-</body>
-</html>
+

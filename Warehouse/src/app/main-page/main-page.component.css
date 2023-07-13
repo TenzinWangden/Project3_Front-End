@@ -139,3 +139,72 @@ nav {
       padding: 15px;
     }
     .row.content {height:auto;} 
+
+   header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding: 10px;
+}
+
+.logo img {
+  height: 40px; /* Adjust the height as needed */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.search button {
+  margin-left: 10px; /* Add some spacing between the input and button */
+}
+
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+    .search-form input[type="text"] {
+      padding: 5px;
+      border-radius: 3px;
+      border: none;
+    }
+    
+    .search-form button[type="submit"] {
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: none;
+      background-color: #007bff;
+    }
+
+        /* CSS styles for the sections */
+        .section {
+          border: 1px solid #ccc;
+          padding: 20px;
+          margin-bottom: 20px;
+          background-color: #eae5e5;
+        }
+        
+        .section-title {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .section-content {
+          font-size: 16px;
+        }
+        
+        .warehouse-image {
+          max-width: 300px;
+          height: auto;
+          margin-bottom: 10px;
+        }
