@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1aedac1;
+    color: #49143f;
+    padding: 1em;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; 
+    height: auto;
+    margin-right: 1em;
+  }
+  
+  .navigation {
+    flex-grow: 1;
+  }
+  
+  .text-end {
+    display: flex;
+    align-items: center;
+  }
+  
