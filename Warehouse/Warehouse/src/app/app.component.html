@@ -1,22 +1,24 @@
 <link rel="stylesheet" href="app.component.css">
-<div class="logo">
+<!-- <div class="logo">
   <img src="https://raw.githubusercontent.com/TenzinWangden/Project3_Front-End/daun/IMG_5914.jpeg" alt="Warehouse Logo">
-</div>
+</div> -->
+<div class="main-text">
 <nav>
   
   <a routerLink="/home" style="margin-left: 1em;">Home</a> |
   <a routerLink="/inventory">Inventory</a> |
   <a routerLink="/about">About</a> | 
-  <a routerLink="/inventory/warehouse1">Warehouse 1</a> |
-  <a routerLink="/inventory/warehouse2">Warehouse 2</a> |
-  <a routerLink="/inventory/warehouse3">Warehouse 3</a>
+  <a routerLink="/inventory/warehouse1">Indianapolis Warehouse</a> |
+  <a routerLink="/inventory/warehouse2">Nashville Warehouse</a> |
+  <a routerLink="/inventory/warehouse3">Oklahoma City Warehouse</a>
   
 
-<div class="text-end">
-  <input class="mb-2 pb-1" type="text" name="email" placeholder="Email" style="height: 37px; margin-right: 2px;">
-  <input class="pb-1" type="text" name="password" placeholder="Password" style="height: 37px">
-  <button class="btn btn-primary ms-2" type="submit" style="margin-left: 5px; padding-top: 5px; margin-right: 10px;">Login</button>
+<div class="text-end" style="border-radius: 25px;">
+  <input class=" pb-1" type="text" name="email" placeholder="Email" style="height: 37px; margin-right: 2px; border-radius: 10px;">
+  <input class="pb-1" type="text" name="password" placeholder="Password" style="height: 37px; border-radius: 10px;">
+  <button class="btn pretty-btn ms-2" type="submit" style="margin-left: 1px; padding-top: 5px; margin-right: 10px;">Login</button>
   </div>
  
 </nav>
 <router-outlet></router-outlet>
+</div>

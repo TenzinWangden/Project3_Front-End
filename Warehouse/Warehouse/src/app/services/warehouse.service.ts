@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Address } from '../models/address';
-import { Warehouse } from '../about/warehouse';
+import { Warehouse } from '../models/warehouse';
+import { HttpClient, HttpResponse } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +12,14 @@ export class WarehouseService {
   new Warehouse(123, "Abds", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
   new Warehouse(123, "Asfldkjfs", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000"),
   new Warehouse(123, "Adfjmdsajfpeoj", new Address(1234, "123 blvd", "Indianapolis", "Indiana", "47909"), "47000")]
-  constructor() { }
+  // constructor() { }
 
   getWarehouses(){
     return this.warehouses;
+  }
+  constructor(private http: HttpClient) { }
+
+  findAll(): Observable<HttpResponse<Warehouse[]>>{
+    return this.http.get<Warehouse[]>("this.url", { observe: 'response' });
   }
 }

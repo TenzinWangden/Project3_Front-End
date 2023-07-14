@@ -4,6 +4,10 @@ import { ItemService } from '../services/item.service';
 import { Typecheck } from '../models/typecheck';
 import { AddItemComponent } from '../add-item/add-item.component';
 import { Type } from '../models/type';
+import { WarehouseService } from '../services/warehouse.service';
+import { Warehouse } from '../models/warehouse';
+import { Address } from '../models/address';
+import { Warehousecheck } from '../models/warehousecheck';
 ​
 @Component({
   selector: 'app-inventory',
@@ -14,10 +18,15 @@ export class InventoryComponent implements OnInit {
   itemList: Item[]=[];
   typeList: Typecheck[] = [];
   allItems: Item[]=[];
+  warehouseList: Warehouse[] = [];
+  typewarehouseCheck: Warehousecheck[] = [];
+  allWarehouses: Warehouse[] = [];
   // n = new Item(0, "", 0, 0, 0, 0);
 ​
-  constructor(private itemService: ItemService){}
+  constructor(private itemService: ItemService, private warehouseService: WarehouseService){};
+
   model: Item = new Item(0, "", new Type(0, ""), 0, 0, 0);
+  warehouseModel: Warehouse = new Warehouse(0, "", new Address(0, "", "", "", ""), "");
   
 ​
   ngOnInit(): void {
@@ -47,6 +56,8 @@ export class InventoryComponent implements OnInit {
 
   }
 
+ 
+
   filter(type: Typecheck): void{
     let i = this.typeList.findIndex(t => t.typeId == type.typeId);
     this.typeList[i].checked= !this.typeList[i].checked;
@@ -60,47 +71,6 @@ export class InventoryComponent implements OnInit {
     } else {
       this.itemList = this.allItems;
     }
-
-    // this.typeList.forEach(type => console.log(type.description + ": " + type.checked))
   }
-
-// deleteItem(delete: Item): void{
-// const index: number = this.itemList.indexOf(d);
-// let i = this.itemList.findIndex(d => d.item_id == delete.item_id);
-// // if (index !== -1){
-// //   this.itemList.splice(index, 1);
-// // }
-
-// }
-// deleteItem(itemList: Item): void{
-//   this.itemList = this.itemList.filter(Item => Item !== Item)
-// }
-
-// addItem(){
-//   let n = new Item();
-//   n.item_name = "";
-//   n.item_id = 0;
-//   n.popularity = 0;
-//   n.quantity = 0;
-//   n.type_id = 0;
-//   n.warehouse_id = 0;
-//   n.splice(0, 0, new AddItemComponent)
-//   return allItems;
-//   }
-
-// addItem(){
-//   this.allItems.push(new Item(0, "", 0, 0, 0, 0));
-//   console.log("item posted");
-// }
-
-
  
-//  onSubmit(){
-//    console.log("in the on submit method")
-//    this.itemService.deleteItem(this.model).subscribe((data) => {
-//      console.log(data);});
-//    console.log("item deleted");
-//  }
-
-
 }

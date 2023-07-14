@@ -1,26 +1,21 @@
-nav {
+
+   .logo {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:  #333;
-    color: white;
-    padding: 1em;
+    justify-content: center;
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
+
+  .title{
+    font-family:'myfont';
+    font-size:3.5em;
+    font-weight: bolder;
+    color:#a9def9;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+    
   }
-  
-  .logo img {
-    width: 100px; 
-    height: auto;
-    margin-right: 1em;
-  }
-  
-  .navigation {
-    flex-grow: 1;
-  }
+
   
   .text-end {
     display: flex;
@@ -32,8 +27,6 @@ nav {
     margin: 0;
     padding: 0;
   }
-  
- 
 
   .container {
     max-width: 1200px;
@@ -73,8 +66,8 @@ nav {
   }
   
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ede7b1;
+    color: black;
     padding: 1em;
     text-align: center;
   }
@@ -83,7 +76,7 @@ nav {
     display: flex;
     align-items: center;
 
-    ;
+    
   }
   
   .search input[type="text"] {
@@ -107,9 +100,6 @@ nav {
     align-items: center;
   }
 
-  
-/**/
-
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -130,6 +120,7 @@ nav {
     background-color: #555;
     color: white;
     padding: 15px;
+    border-radius: 25px;
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
@@ -150,7 +141,7 @@ nav {
 }
 
 .logo img {
-  height: 40px; /* Adjust the height as needed */
+  height: 200px; 
 }
 
 .search {
@@ -165,7 +156,7 @@ nav {
 }
 
 .search button {
-  margin-left: 10px; /* Add some spacing between the input and button */
+  margin-left: 10px; 
 }
 
     
@@ -188,10 +179,11 @@ nav {
 
         /* CSS styles for the sections */
         .section {
-          border: 1px solid #ccc;
+          /* border: 1px solid #ccc; */
           padding: 20px;
           margin-bottom: 20px;
-          background-color: #eae5e5;
+          background-color:#ffd1e4 ;
+          border-radius: 25px;
         }
         
         .section-title {
@@ -202,10 +194,17 @@ nav {
         
         .section-content {
           font-size: 16px;
+
         }
         
         .warehouse-image {
-          max-width: 300px;
-          height: auto;
-          margin-bottom: 10px;
+          /* max-width: 300px; */
+          height: 300px;
+          /* margin-bottom: 10px; */
         }
+        .logo-border{
+          border-radius: 100px;
+        }
+        .main-text{
+          font-family:'myfont';
+         }

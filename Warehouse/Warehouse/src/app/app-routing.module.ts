@@ -19,7 +19,8 @@ const routes: Routes = [{path: "home", component: MainPageComponent, title: "Cam
                         {path: "additem", component: AddItemComponent, title: "Add Item"},
                         {path: "about", component: AboutComponent, title: "About"}, 
                         {path: "update", component: UpdateComponent, title: "Update Inventory"},
-                        {path: "delete", component: DeleteComponent, title: "Delete Item"}
+                        {path: "delete", component: DeleteComponent, title: "Delete Item"},
+                        {path: '', redirectTo: '/home', pathMatch: 'full'}
                        ];
 
 @NgModule({

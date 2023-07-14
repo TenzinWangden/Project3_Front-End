@@ -2,86 +2,12 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 html, body {
-    background-color: rgb(67, 85, 38);
+    background-color:rgb(211, 248, 226);
 }
 .checkbox{
     text-align: left;
 }
-/*
-.text-center{
-    width: 100%;
-    text-align: center;
-}
- 
-.head-space{
-    word-spacing: 5em;
-}
-.main-head{
-    font-size: 75px;
-    font-weight: bolder;
-}
-.text-right{
-    text-align: right;
-}
-.center{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    list-style-position: inside;
-}
-.sidebar{
-    position: sticky;
-    top: 5rem;
-    display: block !important;
-    height: calc(100vh - 6rem);
-    padding-left: 0.25rem;
-    margin-left: 0.25rem;
-    overflow-y: auto;
-    background-color: rgb(135, 138, 145);
-}
-.layout{
-    display: grid;
-    grid-template-areas: "sidebar main";
-    grid-template-columns: 1fr 5fr;
-    gap: 1.5rem;
-}
-.main{
-    background-color: bisque;
-}
-
-.searchBox{
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.search-bar-size{
-    width: 450px;
-    color:rgb(113, 112, 112) ;
-}
-
-.pagination {
-    display: inline-block;
+@font-face{
+    font-family: Caprasimo;
+    src: url('/src/app/assets/Caprasimo-Regular.ttf');
   }
-
-.pagination-a {
-    color: black;
-   float: left;
-   padding: 8px 16px;
-   text-decoration: none;
-  }
-
-.pagination a {
-    border-radius: 5px;
-  }
-.pagination a.active {
-    border-radius: 5px;
-  } 
-
-/* .search-center {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 260px;
-    margin-right: 20px;
-  } */

@@ -1,38 +1,7 @@
-<!-- <form>
-    <div class="text-center">
-    <div >
-        <label for="item_name">Item Name</label>
-    <input type="text" id="item_name" name="item_name" value="">
-</div>
+<div class="main-text">
 
 <div>
-    <label for="type_id">Candy Type</label>
-<input type="text" id="type_id" name="type_id" value="">
-</div>
-
-<div>
-    <label for="quantity">Quantity</label>
-<input type="text" id="quantity" name="quantity" value="">
-</div>
-
-<div>
-    <label for="warehouse_id">Warehouse Location</label>
-<input type="text" id="warehouse_id" name="warehouse_id" value="">
-</div>
-
-<div>
-    <label for="popularity">Popularity</label>
-<input type="text" id="popularity" name="popularity" value="">
-</div>
-
-<div>
-    <button class="btn btn-primary" type="submit">Add to Inventory</button>
-</div></div>
-</form> -->
-
-
-<div>
-    <h1 style="text-align: center; font-weight: bold; font-size:50px;">
+    <h1 class="title" style="text-align: center; font-weight: bold; font-size:50px;">
         Update Inventory
     </h1>
     <form #myForm="ngForm" (ngSubmit)="onSubmit()"> 
@@ -62,12 +31,12 @@
 <input class="form-control formColor" [(ngModel)]="model.popularity"type="number" id="popularity" name="popularity" value="">
 
         </div>
-            <button class="btn btn-primary button border-dark mt-3" style="margin-left:1em;" type="submit">Update Inventory</button>
+            <button class="btn pretty-btn button border-dark mt-3" style="margin-left:1em;" type="submit">Update Inventory</button>
        
-        <input class="btn btn-primary border-dark mt-3" type="reset" value="Reset" style="margin-left: 3px;">
+        <input class="btn pretty-btn border-dark mt-3" type="reset" value="Reset" style="margin-left: 3px;">
 
     </form>
-    <table class="table table-dark table-bordered table-hover table-nonfluid mt-3">
+    <!-- <table class="tables table-hover table-border main-text">
         <thead class="thead-dark">
           <tr>
             <th scope="col" style="font-weight: bolder; font-size:x-large;">Candy Type</th>
@@ -89,4 +58,88 @@
           </tr>
         </tbody>
       </table>
-</div>
+</div> -->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row {
+      margin-left:-5px;
+      margin-right:-5px;
+    }
+      
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #e4c1f9;
+    }
+    </style>
+    <body>
+    <div class="row">
+      <div class="column">
+        <table class="tables table-hover table-border main-text">
+          <tr>
+            <th style="font-weight: bolder; font-size:x-large;" >Candy Name</th>
+            <th style="font-weight: bolder; font-size:x-large;">Candy ID</th>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Chocolate</td>
+            <td style="font-weight: bold;" >1</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Gummy</td>
+            <td style="font-weight: bold;" >2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Lollipop</td>
+            <td style="font-weight: bold;" >3</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <table class="tables table-hover table-border main-text">
+          <tr>
+            <th style="font-weight: bolder; font-size:x-large;">Warehouse Location</th>
+            <th style="font-weight: bolder; font-size:x-large;">Warehouse ID</th>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Indianapolis</td>
+            <td style="font-weight: bold;" >1</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Nashville</td>
+            <td style="font-weight: bold;" >2</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;" >Oklahoma City</td>
+            <td style="font-weight: bold;" >3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    </body></div>
